@@ -8,14 +8,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   background-color: ${(props) => props.theme['blue-500']};
-  padding: 20px;
 `
 export const Content = styled.div`
-  width: 400px;
   justify-content: center;
-  padding: 0 1rem;
   background-color: white;
-  margin: 40px 0px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid ${(props) => props.theme['green-200']};
@@ -58,9 +54,8 @@ export const LoginButtonWithGoogle = styled.button`
   gap: 8px;
   display: flex;
 
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: ${(props) => props.theme['black-200']};
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
 
@@ -135,6 +130,7 @@ export const RecoverPassword = styled.div`
 export const Terms = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 
   a {
     color: ${(porps) => porps.theme['white-100']};
@@ -146,10 +142,31 @@ export const Terms = styled.div`
     color: ${(porps) => porps.theme['white-100']};
     text-decoration: none;
     font-size: 0.75rem;
-    margin: 0 10px;
+    margin: 0 0.625rem;
   }
 
   a:hover {
     color: #dfdfdf;
+  }
+`
+export const BackButton = styled.button`
+  position: fixed;
+  z-index: 997;
+  left: 90px;
+  top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: ${(props) => props.theme['white-100']};
+  border-radius: 0px 0px 8px 8px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+
+  @media (max-width: 780px) {
+    top: 20px;
+    left: 10px;
   }
 `
