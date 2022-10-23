@@ -9,6 +9,7 @@ export const Container = styled.button`
   cursor: pointer;
   background-color: ${(props) => props.theme['blue-400']};
   transition: 0.8;
+  color: ${(props) => props.theme['white-100']};
 
   :hover {
     background-color: ${(props) => props.theme['blue-300']};

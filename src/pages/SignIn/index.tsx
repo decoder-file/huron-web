@@ -2,7 +2,6 @@ import { FcGoogle } from 'react-icons/fc'
 
 import logo from '../../assets/logoHuron.png'
 import { Button } from '../../components/Button'
-import { Input } from '../../components/Input'
 
 import {
   Container,
@@ -17,17 +16,15 @@ import {
   ContainerSeparator,
   InputEmail,
   InputPassword,
-  ContainerNameUser,
-  Separator,
 } from './styles'
 
-export function SignUp() {
+export function SignIn() {
   return (
     <Container>
       <Content>
         <Header>
           <Logo src={logo} />
-          <Title>Inscreva-se</Title>
+          <Title>Olá, Bem-vindo</Title>
           <Caption>Insira suas credenciais para continuar</Caption>
           <LoginButtonWithGoogle>
             <FcGoogle />
@@ -38,21 +35,11 @@ export function SignUp() {
             <p>Ou</p>
             <Line />
           </ContainerSeparator>
-          <ContainerNameUser>
-            <Input
-              title="Primeiro nome"
-              placeholder="Primeiro nome"
-              type="text"
-            />
-            <Separator />
-            <Input title="Sobrenome" placeholder="Sobrenome" type="text" />
-          </ContainerNameUser>
-          <InputEmail title="CPF" placeholder="Digite seu CPF" type="text" />
-          <InputEmail title="E-mail" placeholder="E-mail" type="email" />
-          <InputPassword title="Senha" placeholder="Senha" type="password" />
-          <Button title="Cadastrar" />
+          <InputEmail title="E-mail" type="email" />
+          <InputPassword title="Senha" type="password" />
+          <Button title="Entrar" />
           <Line />
-          <CreateAccount>Entrar</CreateAccount>
+          <CreateAccount>Criar Conta</CreateAccount>
         </Header>
       </Content>
     </Container>

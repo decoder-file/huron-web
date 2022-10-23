@@ -117,11 +117,3 @@ export const InputEmail = styled(Input)`
 export const InputPassword = styled(Input)`
   margin-bottom: 30px;
 `
-export const ContainerNameUser = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-`
-export const Separator = styled.div`
-  margin: 0 5px;
-`
