@@ -1,15 +1,18 @@
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
 import { defaultTheme } from './styles/themes/default'
 
 import { GlobalStyle } from './styles/global'
 
-import { SignIn } from './pages/SignIn'
+import { Router } from './router'
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <SignIn />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   )

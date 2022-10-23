@@ -1,3 +1,5 @@
+import { useCallback } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import {
   Container,
   Header,
@@ -12,6 +14,12 @@ import {
 } from './styles'
 
 export function LandingPage() {
+  const navigate = useNavigate()
+  const handleOnClick = useCallback(
+    () => navigate('/signin', { replace: true }),
+    [navigate],
+  )
+
   return (
     <Container>
       <Content>
@@ -25,8 +33,8 @@ export function LandingPage() {
               <a>Contato</a>
             </ContentOptions>
             <ContentButton>
-              <a>Cadastrar-se</a>
-              <button>Entrar</button>
+              <NavLink to="/signup">Cadastrar-se</NavLink>
+              <button onClick={handleOnClick}>Entrar</button>
             </ContentButton>
           </Header>
           <Information>

@@ -1,4 +1,6 @@
+import { useCallback } from 'react'
 import { FcGoogle } from 'react-icons/fc'
+import { useNavigate } from 'react-router-dom'
 
 import logo from '../../assets/logoHuron.png'
 import { Button } from '../../components/Button'
@@ -23,6 +25,12 @@ import {
 } from './styles'
 
 export function SignUp() {
+  const navigate = useNavigate()
+  const handleOnClickSignIn = useCallback(
+    () => navigate('/signin', { replace: true }),
+    [navigate],
+  )
+
   return (
     <Container>
       <div>
@@ -54,7 +62,9 @@ export function SignUp() {
             <InputPassword title="Senha" placeholder="Senha" type="password" />
             <Button title="Cadastrar" />
             <Line />
-            <CreateAccount>Já tem uma conta? Acesse aqui</CreateAccount>
+            <CreateAccount onClick={handleOnClickSignIn}>
+              Já tem uma conta? Acesse aqui
+            </CreateAccount>
           </Header>
         </Content>
         <Terms>

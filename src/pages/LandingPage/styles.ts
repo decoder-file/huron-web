@@ -76,6 +76,7 @@ export const ContentButton = styled.div`
     font-size: 0.875rem;
     cursor: pointer;
     transition: background-color 0.1s;
+    text-decoration: none;
   }
 
   a:hover {
