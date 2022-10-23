@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 import logo from '../../assets/logoHuron.png'
 import { Button } from '../../components/Button'
@@ -57,7 +57,7 @@ export function SignIn() {
               <InputEmail title="E-mail" type="email" />
               <InputPassword title="Senha" type="password" />
               <RecoverPassword>
-                <a href="/">Esqueci minha senha</a>
+                <NavLink to="/recover-password">Esqueci minha senha</NavLink>
               </RecoverPassword>
               <Button title="Entrar" />
               <Line />
