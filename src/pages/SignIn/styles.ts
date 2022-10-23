@@ -132,3 +132,24 @@ export const RecoverPassword = styled.div`
     color: ${(props) => props.theme['black-100']};
   }
 `
+export const Terms = styled.div`
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: ${(porps) => porps.theme['white-100']};
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+
+  p {
+    color: ${(porps) => porps.theme['white-100']};
+    text-decoration: none;
+    font-size: 0.75rem;
+    margin: 0 10px;
+  }
+
+  a:hover {
+    color: #dfdfdf;
+  }
+`
