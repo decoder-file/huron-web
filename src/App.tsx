@@ -3,12 +3,12 @@ import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
 
 import { GlobalStyle } from './styles/global'
-import { LandingPage } from './pages/LandingPage'
+import { SignUp } from './pages/SignUp'
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <LandingPage />
+      <SignUp />
       <GlobalStyle />
     </ThemeProvider>
   )
