@@ -39,7 +39,7 @@ export function SignIn() {
           <InputPassword title="Senha" type="password" />
           <Button title="Entrar" />
           <Line />
-          <CreateAccount>Criar Conta</CreateAccount>
+          <CreateAccount>Não tem uma conta? Criar aqui</CreateAccount>
         </Header>
       </Content>
     </Container>

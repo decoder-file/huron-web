@@ -19,42 +19,52 @@ import {
   InputPassword,
   ContainerNameUser,
   Separator,
+  Terms,
 } from './styles'
 
 export function SignUp() {
   return (
     <Container>
-      <Content>
-        <Header>
-          <Logo src={logo} />
-          <Title>Inscreva-se</Title>
-          <Caption>Insira suas credenciais para continuar</Caption>
-          <LoginButtonWithGoogle>
-            <FcGoogle />
-            Login com o Google
-          </LoginButtonWithGoogle>
-          <ContainerSeparator>
+      <div>
+        <Content>
+          <Header>
+            <Logo src={logo} />
+            <Title>Inscreva-se</Title>
+            <Caption>Insira suas credenciais para continuar</Caption>
+            <LoginButtonWithGoogle>
+              <FcGoogle />
+              Login com o Google
+            </LoginButtonWithGoogle>
+            <ContainerSeparator>
+              <Line />
+              <p>Ou</p>
+              <Line />
+            </ContainerSeparator>
+            <ContainerNameUser>
+              <Input
+                title="Primeiro nome"
+                placeholder="Primeiro nome"
+                type="text"
+              />
+              <Separator />
+              <Input title="Sobrenome" placeholder="Sobrenome" type="text" />
+            </ContainerNameUser>
+            <InputEmail title="CPF" placeholder="Digite seu CPF" type="text" />
+            <InputEmail title="E-mail" placeholder="E-mail" type="email" />
+            <InputPassword title="Senha" placeholder="Senha" type="password" />
+            <Button title="Cadastrar" />
             <Line />
-            <p>Ou</p>
-            <Line />
-          </ContainerSeparator>
-          <ContainerNameUser>
-            <Input
-              title="Primeiro nome"
-              placeholder="Primeiro nome"
-              type="text"
-            />
-            <Separator />
-            <Input title="Sobrenome" placeholder="Sobrenome" type="text" />
-          </ContainerNameUser>
-          <InputEmail title="CPF" placeholder="Digite seu CPF" type="text" />
-          <InputEmail title="E-mail" placeholder="E-mail" type="email" />
-          <InputPassword title="Senha" placeholder="Senha" type="password" />
-          <Button title="Cadastrar" />
-          <Line />
-          <CreateAccount>Entrar</CreateAccount>
-        </Header>
-      </Content>
+            <CreateAccount>Já tem uma conta? Acesse aqui</CreateAccount>
+          </Header>
+        </Content>
+        <Terms>
+          <a href="/">Suporte</a>
+          <p>-</p>
+          <a href="/">Termos de Uso</a>
+          <p>-</p>
+          <a href="/">Política de Privacidade</a>
+        </Terms>
+      </div>
     </Container>
   )
 }

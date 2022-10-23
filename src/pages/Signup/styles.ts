@@ -15,7 +15,7 @@ export const Content = styled.div`
   justify-content: center;
   padding: 0 1rem;
   background-color: white;
-  margin: 40px 0px;
+  margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid ${(props) => props.theme['green-200']};
@@ -124,4 +124,25 @@ export const ContainerNameUser = styled.div`
 `
 export const Separator = styled.div`
   margin: 0 5px;
+`
+export const Terms = styled.div`
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: ${(porps) => porps.theme['white-100']};
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+
+  p {
+    color: ${(porps) => porps.theme['white-100']};
+    text-decoration: none;
+    font-size: 0.75rem;
+    margin: 0 10px;
+  }
+
+  a:hover {
+    color: #dfdfdf;
+  }
 `
