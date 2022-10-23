@@ -16,6 +16,7 @@ import {
   ContainerSeparator,
   InputEmail,
   InputPassword,
+  RecoverPassword,
 } from './styles'
 
 export function SignIn() {
@@ -37,6 +38,9 @@ export function SignIn() {
           </ContainerSeparator>
           <InputEmail title="E-mail" type="email" />
           <InputPassword title="Senha" type="password" />
+          <RecoverPassword>
+            <a href="/">Esqueci minha senha</a>
+          </RecoverPassword>
           <Button title="Entrar" />
           <Line />
           <CreateAccount>Não tem uma conta? Criar aqui</CreateAccount>

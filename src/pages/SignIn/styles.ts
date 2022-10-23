@@ -115,5 +115,20 @@ export const InputEmail = styled(Input)`
   margin-bottom: 15px;
 `
 export const InputPassword = styled(Input)`
+  margin-bottom: 5px;
+`
+export const RecoverPassword = styled.div`
+  text-align: end;
   margin-bottom: 30px;
+
+  a {
+    color: ${(props) => props.theme['black-300']};
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: ${(props) => props.theme['black-100']};
+  }
 `

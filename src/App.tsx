@@ -4,12 +4,12 @@ import { defaultTheme } from './styles/themes/default'
 
 import { GlobalStyle } from './styles/global'
 
-import { SignUp } from './pages/SignUp'
+import { SignIn } from './pages/SignIn'
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <SignUp />
+      <SignIn />
       <GlobalStyle />
     </ThemeProvider>
   )
