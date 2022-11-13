@@ -1,11 +1,25 @@
 import styled from 'styled-components'
 
-export const LayoutContainer = styled.div`
-  max-width: 74rem;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 1rem;
-  background: ${(props) => props.theme['white-200']};
+export const HeaderDrawer = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+`
+export const HeaderAppBar = styled.div`
+  width: 100%;
+  justify-content: end;
+  display: flex;
+`
+
+export const LoggedUser = styled.div`
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
 `

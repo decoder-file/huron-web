@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { theme } from './themes/default'
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -8,11 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     }
     :focus { 
         outline: 0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
+        box-shadow: 0 0 0 2px ${theme.palette.secondary.dark};
     }
     body {
-        background: ${(props) => props.theme['white-300']};
-        color: ${(props) => props.theme['black-400']};
+        background: ${theme.palette.background.paper};
+        color: ${theme.palette.common.black};
         -webkit-font-smoothing: antialiased;
         font-family: 'Roboto', sans-serif;
     }
