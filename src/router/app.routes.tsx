@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import { DefaultLayouts } from '../layouts/DefaultLayouts'
+import { CreateClinic } from '../pages/CreateClinic'
 import { Err } from '../pages/Erro'
 
 import { Home } from '../pages/Home'
@@ -11,6 +12,7 @@ export function AppRoutes() {
         <Route path="*" element={<Err />} />
         <Route path="/home" element={<Home />} />
       </Route>
+      <Route path="/create-clinic" element={<CreateClinic />} />
     </Routes>
   )
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from '../../styles/themes/default'
 
 export const Container = styled.button`
   width: 100%;
@@ -7,17 +8,17 @@ export const Container = styled.button`
   border: 0;
   outline: 0;
   cursor: pointer;
-  background-color: ${(props) => props.theme['blue-400']};
-  transition: 0.8;
+  background-color: ${theme.palette.primary.main};
+  transition: 0.2;
   padding: 5px;
 
   p {
     font-weight: 600;
     font-size: 0.75rem;
-    color: ${(props) => props.theme['white-100']};
+    color: ${theme.palette.common.white};
   }
 
   :hover {
-    background-color: ${(props) => props.theme['blue-300']};
+    background-color: ${theme.palette.primary.dark};
   }
 `
