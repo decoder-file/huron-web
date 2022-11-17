@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import { theme } from '../../styles/themes/default'
-
 import { Button } from '../../components/Button'
 
 export const Container = styled.div`

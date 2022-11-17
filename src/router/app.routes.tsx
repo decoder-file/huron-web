@@ -4,6 +4,7 @@ import { CreateClinic } from '../pages/CreateClinic'
 import { Err } from '../pages/Erro'
 
 import { Home } from '../pages/Home'
+import { ListClinic } from '../pages/ListClinic'
 
 export function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ export function AppRoutes() {
         <Route path="/home" element={<Home />} />
       </Route>
       <Route path="/create-clinic" element={<CreateClinic />} />
+      <Route path="/list-clinic" element={<ListClinic />} />
     </Routes>
   )
 }
